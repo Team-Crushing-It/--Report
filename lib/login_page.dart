@@ -17,17 +17,39 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Login'),
-      ),
-      body: BlocProvider(
-        create: (context) {
-          return LoginBloc(
-            authenticationBloc: BlocProvider.of<AuthenticationBloc>(context),
-            userRepository: userRepository,
-          );
-        },
-        child: LoginForm(),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              Spacer(flex: 2),
+              Image(image: AssetImage("assets/logo.png")),
+              Text("only real news", style: TextStyle(color: Colors.grey[800], fontFamily: "Open Sans", fontSize: 20, fontWeight: FontWeight.w600)),
+              Spacer(flex: 2),
+              BlocProvider(
+                create: (context) {
+                  return LoginBloc(
+                    authenticationBloc: BlocProvider.of<AuthenticationBloc>(context),
+                    userRepository: userRepository,
+                  );
+                },
+                child: LoginForm(),
+              ),
+              Spacer(),
+              Text("Forgot your password?", style: TextStyle(color: Colors.grey[600], fontSize: 15)),
+              Spacer(flex: 2),
+              RichText(
+                text: TextSpan(
+                  style: TextStyle(fontWeight: FontWeight.w400, fontSize: 15, color: Colors.grey[600]),
+                  children: [TextSpan(text: "Don't have an account? "), TextSpan(text: "Sign Up", style: TextStyle(fontWeight: FontWeight.w600))],
+                ),
+              ),
+              Spacer(),
+            ],
+          ),
+        ),
       ),
     );
   }

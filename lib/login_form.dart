@@ -42,23 +42,46 @@ class _LoginFormState extends State<LoginForm> {
             child: Column(
               children: [
                 TextFormField(
-                  decoration: InputDecoration(labelText: 'username'),
+                  decoration: InputDecoration(labelText: 'Email', border: OutlineInputBorder()),
                   controller: _usernameController,
                 ),
+                SizedBox(height: 15),
                 TextFormField(
-                  decoration: InputDecoration(labelText: 'password'),
+                  decoration: InputDecoration(labelText: 'Password', border: OutlineInputBorder()),
                   controller: _passwordController,
                   obscureText: true,
                 ),
+                SizedBox(height: 40),
                 RaisedButton(
-                  onPressed:
-                  state is! LoginInProgress ? _onLoginButtonPressed : null,
-                  child: Text('Login'),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
+                  onPressed: state is! LoginInProgress ? _onLoginButtonPressed : null,
+                  textColor: Colors.white,
+                  padding: const EdgeInsets.all(0.0),
+                  child: Container(
+                    width: double.maxFinite,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      gradient: LinearGradient(
+                        begin: Alignment.bottomCenter,
+                        end: Alignment.topCenter,
+                        colors: <Color>[
+                          Color(0xFF06AF24),
+                          Color(0xFF07B023),
+                          Color(0xFFBCF1B7),
+                        ],
+                      ),
+                    ),
+                    padding: const EdgeInsets.all(10.0),
+                    child: Center(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 8.0),
+                        child: const Text('LOGIN', style: TextStyle(fontSize: 20)),
+                      ),
+                    ),
+                  ),
                 ),
                 Container(
-                  child: state is LoginInProgress
-                      ? CircularProgressIndicator()
-                      : null,
+                  child: state is LoginInProgress ? CircularProgressIndicator() : null,
                 ),
               ],
             ),
