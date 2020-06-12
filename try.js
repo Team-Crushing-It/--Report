@@ -1,3 +1,4 @@
+//Code to try out the local rest api
 var HttpClient = function() {
     this.get = function(aUrl, aCallback) {
         var anHttpRequest = new XMLHttpRequest();
@@ -7,11 +8,11 @@ var HttpClient = function() {
         }
 
         anHttpRequest.open( "GET", aUrl, true );            
-        anHttpRequest.send( null );
+        anHttpRequest.send( "0.0.55494" );
     }
 }
 
 var client = new HttpClient();
 client.get('http://localhost:3000/', function(response) {
-    // do something with response
+    console.log("works")
 });
