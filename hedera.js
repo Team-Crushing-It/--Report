@@ -20,7 +20,7 @@ const hash = require("hash-sdk");
                     accountId: "0.0.68350" /*<accountId(0.0.1234)>*/,
                     network: "testnet" /*<mainnet | testnet>*/,
                     keys: {
-                      privateKey: "302e020100300506032b657004220420b9cdcce9a18bcefa21f332a968ffec63c0d727f318c474763420e3f7bbf02e97 /*<alphanumeric user privatekey>*/
+                      privateKey: "302e020100300506032b657004220420b9cdcce9a18bcefa21f332a968ffec63c0d727f318c474763420e3f7bbf02e97" /*<alphanumeric user privatekey>*/
                     }
                   };
             await hash.setAccount(accountData);
