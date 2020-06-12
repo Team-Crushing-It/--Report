@@ -1,6 +1,11 @@
 import 'package:http/http.dart';
 
-_makeMoney() async {
+String json="joe";
+
+void main(){
+_doTransaction();
+}
+_doTransaction() async {
   String url = 'https://uploaded-report-api.herokuapp.com/';
   Response response = await get(url);
   int statusCode = response.statusCode;
