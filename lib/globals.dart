@@ -1,3 +1,3 @@
 library my_prj.globals;
 
-String gjson="nope";
+String gjson="997794683035";
