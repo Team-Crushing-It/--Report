@@ -24,7 +24,7 @@ app.options('*', cors());
 
 app.get('/', (req, res) => {
     console.log("hi")
-    mainRun("0.0.68350")
+    mainRun(req)
     console.log("bye")
     res.send(value);
    });
@@ -40,7 +40,7 @@ async function mainRun(idThing) {
 
     /* grab our testnet credentials from our .env file */
     
-    const operatorAccount = idThing;
+    const operatorAccount = "0.0.68350";
     
     const operatorPrivateKey = "302e020100300506032b657004220420b9cdcce9a18bcefa21f332a968ffec63c0d727f318c474763420e3f7bbf02e97";
     
@@ -66,7 +66,7 @@ async function mainRun(idThing) {
     
     .addSender(operatorAccount, 100000000)
     
-    .addRecipient("0.0.55494", 100000000)
+    .addRecipient(idThing, 100000000)
     
     .setTransactionMemo("Thank You For Completing the Challenge!")
     
