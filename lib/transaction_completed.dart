@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:report/event_report.dart';
 
 class TransactionCompleted extends StatelessWidget {
   @override
@@ -16,7 +17,7 @@ class TransactionCompleted extends StatelessWidget {
               style: TextStyle(fontSize: 22),
               textAlign: TextAlign.center,
             ),
-            Text("You earned +15pts", style: TextStyle(fontWeight: FontWeight.w600, fontSize: 30)),
+            Text("You earned +15pts\nYour current balance is $json", style: TextStyle(fontWeight: FontWeight.w600, fontSize: 30)),
             FlatButton(
               child: Text(
                 "Return to map",
