@@ -2,6 +2,7 @@ import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:report/transaction_completed.dart';
 
 import 'preview_screen.dart';
 
@@ -134,6 +135,10 @@ class _CameraScreenState extends State {
                 backgroundColor: Colors.blueGrey,
                 onPressed: () {
                   _onCapturePressed(context);
+                  Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => TransactionCompleted()),
+                );
                 })
           ],
         ),
