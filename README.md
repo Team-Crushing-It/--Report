@@ -6,7 +6,7 @@ See more here! https://hedera20-platform.bemyapp.com/#/projects/5ee3c90f91e08e00
 
 ## Screenshots
 
-![1](/assets/storpage.jpg)
+![1](/assets/storypage.jpg)
 
 ![2](assets/Homepage.jpg)
 
