@@ -89,7 +89,7 @@ class _CoffeeWithJaneState extends State<CoffeeWithJane> {
                           width: 120,
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(10),
-                            child: Image(fit: BoxFit.cover, image: NetworkImage("https://d.newsweek.com/en/full/1531241/national-coffee-day-2019-deals.jpg")),
+                            child: Image(fit: BoxFit.cover, image: NetworkImage("https://cdn.discordapp.com/attachments/720674902868361267/721067293903421500/unknown.png")),
                           ),
                         ),
                         SizedBox(width: 10),
