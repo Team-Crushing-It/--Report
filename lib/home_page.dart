@@ -16,10 +16,10 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   GoogleMapController mapController;
   List<String> imageLinks = [
-    "https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg",
-    "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg",
-    "https://images.unsplash.com/photo-1538370965046-79c0d6907d47?ixlib=rb-1.2.1&w=1000&q=80",
-    "https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg"
+    "https://news.wttw.com/sites/default/files/styles/full/public/article/image-non-gallery/photo10.JPG?itok=IPAwQXD_",
+    "https://img.apmcdn.org/a414fa2cff53807222f65edb0297f36fd5759f9a/uncropped/60fde1-20200529-floyd-protests-national07.jpg",
+    "https://www.dailybulletin.com/wp-content/uploads/2020/05/IDB-L-PROTEST-RC-0531-18-WL-1.jpg?w=620",
+    "https://cdn.vox-cdn.com/thumbor/p6q3uqBc5dwVAGvOe8ykMvDhl98=/0x0:2308x1536/1200x800/filters:focal(970x584:1338x952)/cdn.vox-cdn.com/uploads/chorus_image/image/66876122/1216250010.jpg.0.jpg"
   ];
 
   final LatLng _center = const LatLng(45.521563, -122.677433);
