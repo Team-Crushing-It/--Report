@@ -1,16 +1,8 @@
-# report
+# ✅ Report - only real news
 
-A new Flutter project.
+Built when challenged by the Hedera 20 Virtual Hackathon,  ✅  Report is news for the people, by the people. Using the concept of consensus, ✅  Report allows people to share their story privately or publicly and only stories that have been verified by consensus are published. Further then that, this app incentivizes people to truthfully report by giving rewards for verifying events.
 
-## Getting Started
+See more here! https://hedera20-platform.bemyapp.com/#/projects/5ee3c90f91e08e001bf8551f
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
