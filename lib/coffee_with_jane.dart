@@ -43,6 +43,10 @@ class _CoffeeWithJaneState extends State<CoffeeWithJane> {
                 ),
               ),
             ),
+            Image(
+              image: AssetImage("assets/map-overlay.png"),
+              alignment: Alignment.bottomCenter,
+            ),
             SafeArea(
               child: Padding(
                 padding: const EdgeInsets.all(12.0),
@@ -70,7 +74,7 @@ class _CoffeeWithJaneState extends State<CoffeeWithJane> {
                                 ),
                               ),
                               Text(
-                                "Coffee With Jane",
+                                "Breakfast With Jane",
                                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600),
                               ),
                             ],
