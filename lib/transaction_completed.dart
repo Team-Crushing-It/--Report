@@ -13,7 +13,7 @@ class TransactionCompleted extends StatelessWidget {
           children: [
             Image(image: NetworkImage("https://www.mpdrg.com/wp-content/uploads/2017/08/congratulations.ico")),
             Text(
-              "Thanks for reporting on Peaceful Protests in Portland, Oregon!",
+              "Thanks for reporting on Coffee With Jane!",
               style: TextStyle(fontSize: 22),
               textAlign: TextAlign.center,
             ),
