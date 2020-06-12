@@ -20,7 +20,7 @@ class TransactionCompleted extends StatelessWidget {
               style: TextStyle(fontSize: 22),
               textAlign: TextAlign.center,
             ),
-            Text("You earned +15pts\nYour current balance is $currentText", style: TextStyle(fontWeight: FontWeight.w600, fontSize: 30)),
+            Text("You earned +15pts\nYour current balance is $currentText", style: TextStyle(fontWeight: FontWeight.w600, fontSize: 30), textAlign: TextAlign.center,),
             FlatButton(
               child: Text(
                 "Return to map",
